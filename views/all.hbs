@@ -1,0 +1,12 @@
+<h1>Brett's Deals - Get ALL The Parties for 9.99$US</h1>
+
+{{#each parties}}
+    <article>
+        <h2>{{this.name}}</h2>
+        <em>Located at {{this.location}}</em><br>
+        <strong>Hosted by:     {{this.host_name}}</strong><br>
+        <a href="/{{this.id}}">View individual item</a>
+    </article>
+{{/each}}
+
+- <a href="/create">Missing a party? Add another!</a>
